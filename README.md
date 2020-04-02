@@ -7,8 +7,8 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 
 ### [Understanding Java Technology and environment](pages/Understanding_Java.md)
 
-- [Describe Java Technology and the Java development](pages/Understanding_Java.md#topic1)
-- [Identify key features of the Java language](pages/Understanding_Java.md#topic2)
+- [Describe Java Technology and the Java development](pages/Understanding_Java.md#describe-java-technology-and-the-java-development)
+- [Identify key features of the Java language](pages/Understanding_Java.md#identify-key-features-of-the-java-language)
 
 ### [Creating a Simple Java Program](pages/Simple_Java_Program.md)
 
