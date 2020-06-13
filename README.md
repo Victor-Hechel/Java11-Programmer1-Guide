@@ -18,7 +18,7 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 
 ### Working With Java Primitive Data Types and String APIs
 
-- [Declare and initialize variables (including casting and promoting primitive data types)](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs#declare-and-initialize-variables-including-casting-and-promoting-primitive-data-types))
+- [Declare and initialize variables (including casting and promoting primitive data types)](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#declare-and-initialize-variables-including-casting-and-promoting-primitive-data-types)
 - Identify the scope of variables
 - Use local variable type inference
 - Create and manipulate Strings
