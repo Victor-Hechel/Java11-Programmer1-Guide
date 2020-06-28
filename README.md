@@ -19,8 +19,8 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 ### Working With Java Primitive Data Types and String APIs
 
 - [Declare and initialize variables (including casting and promoting primitive data types)](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#declare-and-initialize-variables-including-casting-and-promoting-primitive-data-types)
-- Identify the scope of variables
-- Use local variable type inference
+- [Identify the scope of variables](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#identify-the-scope-of-variables)
+- [Use local variable type inference](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#use-local-variable-type-inference)
 - Create and manipulate Strings
 - Manipulate data using the StringBuilder class and its methods
 
@@ -35,9 +35,9 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 - Declare, instantiate, initialize and use a one-dimensional array
 - Declare, instantiate, initialize and use a two-dimensional array
 
-### Describing and Using Objects and Classes
+### [Describing and Using Objects and Classes](pages/Describing_and_Using_Objects_and_Classes.md)
 
-- Declare and instantiate Java objects, and explain objects' lifecycles (including creation, dereferencing by reassignment, and garbage collection)
+- [Declare and instantiate Java objects, and explain objects' lifecycles (including creation, dereferencing by reassignment, and garbage collection)](pages/Describing_and_Using_Objects_and_Classes.md#declare-and-instantiate-java-objects-and-explain-objects-lifecycles-including-creation-dereferencing-by-reassignment-and-garbage-collection)
 - Define the structure of a Java class
 - Read or write to object fields
 

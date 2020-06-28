@@ -122,3 +122,78 @@ byte b2 = (byte)l; // will compile, but will store a value different than 200.00
 final int i2 = 100;
 byte b3 = i2; // on this case we do not need to do the explicit cast, because the source variable is final so the compiler will check it is a valid cast and handle that.
 ```
+
+## Identify the scope of variables
+
+There are two types of scope in Java: visibility and lifespan. 
+
+The visibility scope of a variable covers all places lower than the one it has been defined. For example, if a variable was declared on a method, it is visible inside blocks in the method, but not visible to other methods or to the class directly. It is important to not confuse visibility with accessibility.
+
+``java
+
+public class Student{
+
+    // visible in the whole class 
+    public String name;
+    public String surname;
+
+    public void print()
+    {
+        String completeName = name + " " + surname; // visible only inside this method
+        System.out.println(completeName);
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        
+        Student s = new Student();
+        // "name" is accessible, but not visible, since we had to refer the object
+        s.name = "Rodrigo";
+    }
+}
+``
+
+The lifespan scope refers to when the variable will be unusable, in other words, when it's life time ends. There are five types of lifespan scopes:
+
+- class (static and non-static fields)
+- instance (only non-static)
+- method
+- for loop (variables declared on the for loop signature, not inside the for block)
+- blocks
+
+There are basically two rules about scope:
+
+- You can not access variables with no visibility directly (obviously)
+- The only kind of variable that can be overlaped is the class one, using method, for loop or block variables.
+
+## Use local variable type inference
+
+Thanks to Java 10 we are able to use type inference on local variables (it does not work with class-scope variables or method parameters). Basically it means that we can let the compiler infer the type of the variable when there is no ambiguity.
+
+``java
+public class VariablesInference{
+
+    public static void main(String[] args){
+
+        // VALID CASES
+
+        var s = "Test"; // compile infers type as String
+
+        Object obj = "String";
+        var objectVariable = obj; // type will be Object and not String, because it is the type of "obj"
+
+        var var = "not a keyword" // "var" is a shortcut, not a keyword, so it is possible to use it as a variable name
+
+        // INVALID CASES
+
+        var number; // it is not possible to use this feature with uninitilized variables
+
+        var nullCase = null; // null is not a type
+
+        var intArray = { 5, 23, 12}; // type of array is not defined
+
+        var[] stringArray = new String[2]; // var is not a type, so there is no need of [] on the declaration;
+    }
+}
+``
