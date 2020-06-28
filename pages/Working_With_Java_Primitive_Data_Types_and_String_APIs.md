@@ -129,7 +129,7 @@ There are two types of scope in Java: visibility and lifespan.
 
 The visibility scope of a variable covers all places lower than the one it has been defined. For example, if a variable was declared on a method, it is visible inside blocks in the method, but not visible to other methods or to the class directly. It is important to not confuse visibility with accessibility.
 
-``java
+```java
 
 public class Student{
 
@@ -152,7 +152,7 @@ public class Main{
         s.name = "Rodrigo";
     }
 }
-``
+```
 
 The lifespan scope refers to when the variable will be unusable, in other words, when it's life time ends. There are five types of lifespan scopes:
 
@@ -171,7 +171,7 @@ There are basically two rules about scope:
 
 Thanks to Java 10 we are able to use type inference on local variables (it does not work with class-scope variables or method parameters). Basically it means that we can let the compiler infer the type of the variable when there is no ambiguity.
 
-``java
+```java
 public class VariablesInference{
 
     public static void main(String[] args){
@@ -196,4 +196,4 @@ public class VariablesInference{
         var[] stringArray = new String[2]; // var is not a type, so there is no need of [] on the declaration;
     }
 }
-``
+```

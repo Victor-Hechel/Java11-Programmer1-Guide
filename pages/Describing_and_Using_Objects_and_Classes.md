@@ -24,7 +24,7 @@ Inside a class we may have:
 
 These are called "members" and can be "static" or "instance". Here is an example using all of them:
 
-``java
+```java
 package com.xyz;
 
 import java.util.ArrayList;
@@ -60,7 +60,7 @@ public class Garage{
         compact
     }
 }
-``
+```
 
 Another important rule is about the name of the java file. It must equal to the name of the public top-level type. You can have multiple top-level types in the same file, but only one can be public.
 
@@ -69,7 +69,7 @@ Another important rule is about the name of the java file. It must equal to the 
 
 When we have a public instance variable we can access and update its value inside and outside the class directly with no impediments.
 
-``java
+```java
 public class Person{
     public String name;
     public int age;
@@ -89,11 +89,11 @@ public class Main{
         p.age = 21;
     }
 }
-``
+```
 
 But we have one situation which might cause confusion on beginners. What happens when the following constructor runs?
 
-``java
+```java
 public class Person{
     public String name;
 
@@ -101,11 +101,11 @@ public class Person{
         name = name;
     }
 }
-``
+```
 
 This code compiles fine, but it does not work as we wanted to. The local variable "name" will be assigned with the value from itself, when we actually wanted the instance variable to be assigned with the value from the local one. To make it work we should use the keyword "this", which represents the current object where the method is being executed.
 
-``java
+```java
 public class Person{
     public String name;
 
@@ -114,4 +114,4 @@ public class Person{
         this.name = name;
     }
 }
-``
+```
