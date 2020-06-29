@@ -16,13 +16,13 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 - [Compile and run a Java program from the command line](pages/Creating_Simple_Java_Program.md#compile-and-run-a-Java-program-from-the-command-line)
 - [Create and import packages](pages/Creating_Simple_Java_Program.md#create-and-import-packages)
 
-### Working With Java Primitive Data Types and String APIs
+### [Working With Java Primitive Data Types and String APIs](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md)
 
 - [Declare and initialize variables (including casting and promoting primitive data types)](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#declare-and-initialize-variables-including-casting-and-promoting-primitive-data-types)
 - [Identify the scope of variables](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#identify-the-scope-of-variables)
 - [Use local variable type inference](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#use-local-variable-type-inference)
-- Create and manipulate Strings
-- Manipulate data using the StringBuilder class and its methods
+- [Create and manipulate Strings](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#create_and_manipulate_strings)
+- [Manipulate data using the StringBuilder class and its methods](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#Manipulate_data_using_the_StringBuilder_class_and_its_methods)
 
 ### Using Operators and Decision Constructs
 

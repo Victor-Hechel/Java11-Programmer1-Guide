@@ -197,3 +197,92 @@ public class VariablesInference{
     }
 }
 ```
+
+## Create and manipulate Strings
+
+A String is an object which represents a unmutable sequence of characters. In Java its class is final, which means that is not possible to have derivations from it, however, it implements the interface CharSequence, so we can use it in place of String in some cases. 
+
+There are many ways to create a String, since it is an object one of the ways is by constructors.
+
+- **String():** empty String
+- **String(CharSequence):** creates new String in memory with the value of a CharSequence(String, StringBuilder, ...)
+- **String(bytes[]):** decodes the bytes with the default charset
+- **String(char[]):** turns a char array into a String
+
+Another way is concatenating a String with some other element, but there are some important informations about it:
+
+- if the String is being concatenated with a reference variable, its method **toString()** will be called
+- if the String is being concatenated with a reference variable, which its value is **null**, then **null** will be printed(**NullPointerException** will not be thrown)
+- if the String is being concatenated with a primitive value it will be created a wrapper object and then the **toString()** method is called
+- in Java, expressions are evaluated from left to right, so **(1 + 2 + "3")** will result in **"33"**, but **("3" + 2 + 1)** will result in **"321"**. 
+
+Strings created with the **new** keyword are stored in the **heap space**, since it is an object, but when it is created by using literals and concatenation they are stored in the **String Pool**. Its purpose is to keep Strings in case that there is the need to create a repeated one, so we will not have multiple identical Strings. 
+
+```java
+String s1 = "test";
+String s2 = "test";
+String s3 = new String("test");
+String s4 = new String("test");
+
+// will print true, because both of them point to the same String in the String Pool
+System.out.println(s1 == s2); 
+
+// will print false, because "test" from s2 is in the String Pool and the one from s3 
+// is in the heap space
+System.out.println(s2 == s3);
+
+// will print false, when we use the "new" keyword another object is stored in memory
+System.out.println(s3 == s4);
+
+// will print true, "intern" method gets the reference from String Pool
+System.out.println(s1 == s3.intern());
+```
+
+Another important subject about Strings is their API, since we can not change their values is important to have a wide knowledge of the methods. Here are some of the most important String methods:
+
+- **int length():** returns the length of the String
+- **char charAt(int index):** returns the char in the index
+- **int indexOf(int character):** returns the index of the first occurance of the char. It also supports String as parameter and an int representing the start index
+- **String substring(int beginIndex, int endIndex):** returns the String in the interval
+- **String concat(String str):** returns a new String with the parameter concatenated
+- **String toLowerCase():** returns the whole String in lower case
+- **String toUpperCase():** returns the whole String in upper case
+- **String replace(char oldChar, char newChar):** returns a new String with all characters specified replaced
+- **String trim():** returns a new String without white spaces with code equal or lower than 'U+0020' on the leading and trailing
+- **String strip():** same thing as trim(), but also considers another unicodes greater than 'U+0020'
+- **boolean isEmpty():** returns true if String is empty
+- **boolean isBlank():** returns true if String is empty or white spaces
+- **boolean startsWith(String prefix):** returns true if String starts with the specified parameter
+- **boolean endsWith(String suffix):** returns true if String ends with the specified parameter
+- **boolean contains(CharSequence s):** returns true if String contains the sequence of characters
+- **boolean equals(Object anObject):** returns true if String value is equal to the object's value
+- **boolean equalsIgnoreCase(String anObject):** same thing as equals() but ignores case.
+
+## Manipulate data using the StringBuilder class and its methods
+
+StringBuilder is a mutable final class, implements CharSequence and is equivalent to the String class. The difference between them is that it makes use of Strings as regular objects, so they are ellected to be diposed by the garbage collector. It is common to use StringBuilder when we need to make many concatenations to a String, this way the partial ones do not occupy space in memory.
+
+```java
+StringBuilder sb = new StringBuilder();
+
+sb.append("test");
+sb.append(" another test");
+
+System.out.println(sb); // prints "test another test"
+String s = null;
+sb.append(s).append(new Object()); // StringBuilder methods return itself
+
+System.out.println(sb); // prints "test another testnulljava.lang.Object@6d06d69c"
+
+sb.insert(5, "inserted test ");
+
+System.out.println(sb); // prints "test inserted test another testnulljava.lang.Object@6d06d69c"
+
+sb.replace(0, 4, "replaced");
+
+System.out.println(sb); // prints "replaced inserted test another testnulljava.lang.Object@6d06d69c"
+
+sb.delete(30, sb.length());
+
+System.out.println(sb); // prints "replaced inserted test another"
+```
