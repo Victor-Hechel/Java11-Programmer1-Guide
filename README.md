@@ -24,9 +24,9 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 - [Create and manipulate Strings](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#create_and_manipulate_strings)
 - [Manipulate data using the StringBuilder class and its methods](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#Manipulate_data_using_the_StringBuilder_class_and_its_methods)
 
-### Using Operators and Decision Constructs
+### [Using Operators and Decision Constructs](pages/Using_Operators_and_Decision_Constructs.md)
 
-- Use Java operators including the use of parentheses to override operator precedence
+- [Use Java operators including the use of parentheses to override operator precedence](pages/Using_Operators_and_Decision_Constructs.md#Use_Java_operators_including_the_use_of_parentheses_to_override_operator_precedence)
 - Use Java control statements including if, if/else, switch
 - Create and use do/while, while, for and for each loops, including nested loops, use break and continue statements
 
