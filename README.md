@@ -5,29 +5,29 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 
 ## Content
 
-### [Understanding Java Technology and environment](pages/Understanding_Java.md)
+### [Understanding Java Technology and environment](pages/Understanding_Java.md#understanding-java)
 
 - [Describe Java Technology and the Java development](pages/Understanding_Java.md#describe-java-technology-and-the-java-development)
 - [Identify key features of the Java language](pages/Understanding_Java.md#identify-key-features-of-the-java-language)
 
-### [Creating a Simple Java Program](pages/Creating_Simple_Java_Program.md)
+### [Creating a Simple Java Program](pages/Creating_Simple_Java_Program.md#creating-simple-java-program)
 
 - [Create an executable Java program with a main class](pages/Creating_Simple_Java_Program.md#create-an-executable-java-program-with-a-main-class)
 - [Compile and run a Java program from the command line](pages/Creating_Simple_Java_Program.md#compile-and-run-a-Java-program-from-the-command-line)
 - [Create and import packages](pages/Creating_Simple_Java_Program.md#create-and-import-packages)
 
-### [Working With Java Primitive Data Types and String APIs](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md)
+### [Working With Java Primitive Data Types and String APIs](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#working-with-java-primitive-data-types-and-string-apis)
 
 - [Declare and initialize variables (including casting and promoting primitive data types)](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#declare-and-initialize-variables-including-casting-and-promoting-primitive-data-types)
 - [Identify the scope of variables](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#identify-the-scope-of-variables)
 - [Use local variable type inference](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#use-local-variable-type-inference)
-- [Create and manipulate Strings](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#create_and_manipulate_strings)
-- [Manipulate data using the StringBuilder class and its methods](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#Manipulate_data_using_the_StringBuilder_class_and_its_methods)
+- [Create and manipulate Strings](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#create-and-manipulate-strings)
+- [Manipulate data using the StringBuilder class and its methods](pages/Working_With_Java_Primitive_Data_Types_and_String_APIs.md#manipulate-data-using-the-stringbuilder-class-and-its-methods)
 
-### [Using Operators and Decision Constructs](pages/Using_Operators_and_Decision_Constructs.md)
+### [Using Operators and Decision Constructs](pages/Using_Operators_and_Decision_Constructs.md#using-operators-and-decision-constructs)
 
-- [Use Java operators including the use of parentheses to override operator precedence](pages/Using_Operators_and_Decision_Constructs.md#Use_Java_operators_including_the_use_of_parentheses_to_override_operator_precedence)
-- [Use Java control statements including if, if/else, switch](pages/Using_Operators_and_Decision_Constructs.md#use_java_control_statements_including_if_if/else_switch)
+- [Use Java operators including the use of parentheses to override operator precedence](pages/Using_Operators_and_Decision_Constructs.md#use-java-operators-including-the-use-of-parentheses-to-override-operator-precedence)
+- [Use Java control statements including if, if/else, switch](pages/Using_Operators_and_Decision_Constructs.md#use-java-control-statements-including-if-ifelse-switch)
 - Create and use do/while, while, for and for each loops, including nested loops, use break and continue statements
 
 ### Working with Java Arrays
@@ -35,7 +35,7 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 - Declare, instantiate, initialize and use a one-dimensional array
 - Declare, instantiate, initialize and use a two-dimensional array
 
-### [Describing and Using Objects and Classes](pages/Describing_and_Using_Objects_and_Classes.md)
+### [Describing and Using Objects and Classes](pages/Describing_and_Using_Objects_and_Classes.md#describing-and-using-objects-and-classes)
 
 - [Declare and instantiate Java objects, and explain objects' lifecycles (including creation, dereferencing by reassignment, and garbage collection)](pages/Describing_and_Using_Objects_and_Classes.md#declare-and-instantiate-java-objects-and-explain-objects-lifecycles-including-creation-dereferencing-by-reassignment-and-garbage-collection)
 - Define the structure of a Java class
