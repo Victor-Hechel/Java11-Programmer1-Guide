@@ -157,3 +157,96 @@ if(i++ == 0 || (i++ != j++)){
 System.out.println(i); // 1
 System.out.println(j); // 0
 ```
+
+## Use Java control statements including if, if/else, switch
+
+You probably already know how an "if" statement works, so here I am just going to highlight some unusual examples of this structure.
+
+```java
+
+// will not compile because the if has no block or statement
+if(true)
+else
+    System.out.println("else");
+
+// compiles fine because the if has an empty statement
+if(true);
+else
+    System.out.println("else");
+
+```
+
+We also have a shortcut for the if/else statement, which is the ternary operator. To use it we set a condition and a return value in case it is true and another whether it is false, they must be from the same type, unless they are numeric, in this case it will result on the largest type.
+
+```java
+int num1 = 20, num2 = 40;
+
+// compiles fine, because if it falls as false the 3 will be promoted to double. Same rule as a simple assignment
+double a = num1 == num2 ? 15.3 : 3; 
+
+// will not compile, there must be an else
+int num3 = num1 == num2 ? 5;
+
+// will not compile because the last return type is compatible with String
+String str1 = num1 == num2 ? "String" : new Integer(4);
+```
+
+Similar to the if statement we have the switch, which is a chain of possible results. We pass an argument that must be byte, char, short, int, enum or String, and define many possibilities to the value, if it does not fit in any of them we can set a default option. Another important fact about switch is that it has a cascading effect, when it enters a block all the others bellow are also executed, unless the default.
+
+```java
+
+int i = 2;
+
+// will print Two and Three
+switch(i){
+    case 1: System.out.println("One");
+    case 1 + 1: System.out.println("Two"); // since the operation is done in compile done it works
+    case 3: System.out.println("Three");
+}
+
+
+// will print only Two
+switch(i){
+    case 1: System.out.println("One"); break;
+    case 2: System.out.println("Two"); break;
+    case 3: System.out.println("Three"); break;
+}
+
+// prints Default
+switch(i){
+    case 1: System.out.println("One"); break;
+    case 3: System.out.println("Three"); break;
+    default: System.out.println("Default");
+}
+
+// prints Default as well
+switch(i){
+    default: System.out.println("Default");
+}
+
+```
+
+A curious aspect of the switch is the case of enums. When we use an enum as parameter there is no need to refer the name on the cases, just the value.
+
+```java
+
+DayOfWeek day = DayOfWeek.TUESDAY;
+
+switch(day){
+    // there is no need to write the whole enum reference
+    MONDAY: System.out.println("Mon"); break;
+    TUESDAY: System.out.println("Tue"); break;
+    WEDNESDAY: System.out.println("Wed"); break;
+    THURSDAY: System.out.println("Thu"); break;
+    FRIDAY: System.out.println("Fri");
+    // will not compile because DayOfTheWeek has no value "DayOfWeek.FRIDAY"
+    // DayOfWeek.FRIDAY: System.out.println("Fri");
+    default: System.out.println("Weekend")
+
+}
+
+```
+
+
+
+
