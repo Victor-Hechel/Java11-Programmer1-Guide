@@ -247,6 +247,87 @@ switch(day){
 
 ```
 
+## Create and use do/while, while, for and for each loops, including nested loops, use break and continue statements
 
+You probably already know how a loop works in a programming language, there are no big differences in Java, so here we are going to see the basic syntax and some attention points.
 
+```java
 
+int i = 0;
+
+// most basic loop, same syntax rules of an if structure
+while(i < 10){
+    System.out.println("i: " + i);
+    i++;
+}
+
+// same as a normal while, but it is always executed at least once, 
+// because the condition is evaluated after the block
+do{
+    System.out.println("i: " + i);
+}while(i < 0);
+
+// normal "for" estructure
+for(int j = 0; j < 10; j++){
+    System.out.println("j: " + j);
+}
+
+// none of the three sections are required, unlike the while structure where the condition is required
+for(;;);
+
+String[] names = { "Luke", "Han Solo", "Leia" };
+
+// for each structure, it can iterate through arrays and objects that implements the Iterable interface
+for(String name : names){
+    System.out.println(name);
+}
+
+// the "break" keyword finishes the current loop
+// "continue" keyword ignores and skips the rest of the current iterator
+
+for(int j = 0; j < 10; j++){
+    if(j == 6)
+        break;
+    if(j == 2);
+        continue;
+    System.out.println("j: " + j);
+}
+
+// this block will print: 
+// 0
+// 1
+// 3
+// 4
+// 5
+
+```
+
+A very interesting tool in Java is the label, it is used to tag statements and blocks (not applicable on declarations neither method's signatures). We can combine labels with break/continue to control the flow of nested loops.
+
+```java
+
+FIRST_LOOP: for(int i = 0; i < 5; i++){
+    for(int j = 0; j < 3; j++){
+        if(i == 2 && j == 0)
+            continue FIRST_LOOP;
+
+        if(i == 3 && j == 1)
+            break FIRST_LOOP;
+
+        System.out.println("i: " + i + " j: " + j);
+    }
+}
+
+// this code prints:
+
+// i: 0 j: 0
+// i: 0 j: 1
+// i: 0 j: 2
+
+// i: 1 j: 0
+// i: 1 j: 1
+// i: 1 j: 2
+
+// i: 3 j: 0
+
+```

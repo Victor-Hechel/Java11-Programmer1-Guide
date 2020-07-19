@@ -28,7 +28,8 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 
 - [Use Java operators including the use of parentheses to override operator precedence](pages/Using_Operators_and_Decision_Constructs.md#use-java-operators-including-the-use-of-parentheses-to-override-operator-precedence)
 - [Use Java control statements including if, if/else, switch](pages/Using_Operators_and_Decision_Constructs.md#use-java-control-statements-including-if-ifelse-switch)
-- Create and use do/while, while, for and for each loops, including nested loops, use break and continue statements
+- [Create and use do/while, while, for and for each loops, including nested loops, use break and continue statements](pages/Using_Operators_and_Decision_Constructs.md#create-and-use-dowhile-while-for-and-for-each-loops-including-nested-loops-use-break-and-continue-statements)
+
 
 ### Working with Java Arrays
 
