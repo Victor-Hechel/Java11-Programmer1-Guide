@@ -31,10 +31,10 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 - [Create and use do/while, while, for and for each loops, including nested loops, use break and continue statements](pages/Using_Operators_and_Decision_Constructs.md#create-and-use-dowhile-while-for-and-for-each-loops-including-nested-loops-use-break-and-continue-statements)
 
 
-### Working with Java Arrays
+### [Working with Java Arrays](pages/Working_with_Java_Arrays.md#working-with-java-arrays)
 
-- Declare, instantiate, initialize and use a one-dimensional array
-- Declare, instantiate, initialize and use a two-dimensional array
+- [Declare, instantiate, initialize and use a one-dimensional array](pages/Working_with_Java_Arrays.md#declare-instantiate-initialize-and-use-a-one-dimensional-array)
+- [Declare, instantiate, initialize and use a two-dimensional array](pages/Working_with_Java_Arrays.md#declare-instantiate-initialize-and-use-a-two-dimensional-array)
 
 ### [Describing and Using Objects and Classes](pages/Describing_and_Using_Objects_and_Classes.md#describing-and-using-objects-and-classes)
 
