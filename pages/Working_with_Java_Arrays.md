@@ -40,7 +40,7 @@ When we instantiate an array with no values it is filled with the default value 
 int[] numbers = new int[3];
 
 System.out.println(number[0] == 0);
-System.out.println(number[numbers.length()]); // Error: ArrayIndexOutOfBounds(classic)
+System.out.println(number[numbers.length]); // Error: ArrayIndexOutOfBounds(classic)
 
 numbers[1] = 15;
 System.out.println(number[1] == 15);
