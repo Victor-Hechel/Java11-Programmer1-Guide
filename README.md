@@ -42,11 +42,11 @@ Study Guide for Java SE 11 Programmer I Exam (1Z0-815)
 - Define the structure of a Java class
 - Read or write to object fields
 
-### Creating and Using Methods
+### [Creating and Using Methods](pages/Creating_and_Using_Methods.md#creating-and-using-methods)
 
-- Create methods and constructors with arguments and return values
-- Create and invoke overloaded methods
-- Apply the static keyword to methods and fields
+- [Create methods and constructors with arguments and return values](pages/Creating_and_Using_Methods.md#create-methods-and-constructors-with-arguments-and-return-values)
+- [Create and invoke overloaded methods](pages/Creating_and_Using_Methods.md#create-and-invoke-overloaded-methods)
+- [Apply the static keyword to methods and fields](pages/Creating_and_Using_Methods.md#apply-the-static-keyword-to-methods-and-fields)
 
 ### Applying Encapsulation
 
